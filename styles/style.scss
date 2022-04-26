@@ -3,37 +3,53 @@
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     color: aliceblue;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    font-weight: bold;
 }
 body {
     background: rgb(73, 73, 73);
 }
-.intro {
-    h1 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 1rem 0;
-    }
-    h2 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 1rem 0;
-    }
-    hr {
-        width: 50%;
-        border: 1px solid rgba(255, 255, 255, 0.605);
-        margin: 0.2rem auto;
-    }
-}
 
-.ip {
-    p {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 3rem 0;
-        font-size: 7rem;
-        color: rgb(82, 176, 53);
+.main-content {
+    width: 100%;
+    height: 100%;
+    background-image: url(https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTU0OTkwNDUxOTQ5MDUzNDQ3/kanye-west-attends-the-christian-dior-show-as-part-of-the-paris-fashion-week-womenswear-fall-winter-2015-2016-on-march-6-2015-in-paris-france-photo-by-dominique-charriau-wireimage-square.jpg);
+    
+    .intro {
+        h1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem 0;
+            font-size: 3rem;
+        }
+        h2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem 0;
+            font-size: 2.5rem;
+        }
+        hr {
+            width: 50rem;
+            border: 1px solid rgba(255, 255, 255, 0.605);
+            margin: 0.2rem auto;
+            
+        }
+    }
+    
+    .texts {
+        padding-top: 3rem;
+        p {
+            transition: ease-in-out 0.4s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 2rem;
+            font-size: 3rem;
+            color: rgb(82, 176, 53);
+            
+        }
     }
 }

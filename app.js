@@ -1,11 +1,14 @@
 const text = document.querySelector(".text");
+const Http = new XMLHttpRequest();
+const url='https://api.kanye.rest';
 
 function changeText() {
-    let ip;
-    fetch('https://api.ipify.org/?format=json')
-        .then(results => results.json())
-        .then(console.log);
-    text.innerHTML = "Hello World";
+    Http.open("GET", url);
+    Http.send();
+    Http.onreadystatechange = (e) => {
+        const response = JSON.parse(Http.responseText);
+        text.innerHTML = response.quote;
+    }
 }
 
 changeText();

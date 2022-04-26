@@ -3,13 +3,22 @@
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
   color: aliceblue;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+  font-weight: bold;
 }
 
 body {
   background: #494949;
 }
 
-.intro h1 {
+.main-content {
+  width: 100%;
+  height: 100%;
+  background-image: url(https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTU0OTkwNDUxOTQ5MDUzNDQ3/kanye-west-attends-the-christian-dior-show-as-part-of-the-paris-fashion-week-womenswear-fall-winter-2015-2016-on-march-6-2015-in-paris-france-photo-by-dominique-charriau-wireimage-square.jpg);
+}
+
+.main-content .intro h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -20,9 +29,10 @@ body {
       -ms-flex-align: center;
           align-items: center;
   padding: 1rem 0;
+  font-size: 3rem;
 }
 
-.intro h2 {
+.main-content .intro h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -33,15 +43,22 @@ body {
       -ms-flex-align: center;
           align-items: center;
   padding: 1rem 0;
+  font-size: 2.5rem;
 }
 
-.intro hr {
-  width: 50%;
+.main-content .intro hr {
+  width: 50rem;
   border: 1px solid rgba(255, 255, 255, 0.605);
   margin: 0.2rem auto;
 }
 
-.ip p {
+.main-content .texts {
+  padding-top: 3rem;
+}
+
+.main-content .texts p {
+  -webkit-transition: ease-in-out 0.4s;
+  transition: ease-in-out 0.4s;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -51,8 +68,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 3rem 0;
-  font-size: 7rem;
+  padding: 0 2rem;
+  font-size: 3rem;
   color: #52b035;
 }
 /*# sourceMappingURL=style.css.map */
